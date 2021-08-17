@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+  - name: Delete a resource group
+    azure_rm_resourcegroup:
+       name: ansibledemo
+       state: absent
